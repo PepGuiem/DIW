@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horari</title>
+  </head>
+  <body>
+    <style>
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        font-style: italic;
+      }
+      #taula {
+        border: 1px solid black;
+        margin: 100px auto;
+      }
+
+      .titol {
+        text-align: center;
+      }
+
+      th {
+        border: 1px solid black;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .EIE {
+        background-color: aqua;
+      }
+
+      .DWEC {
+        background-color: greenyellow;
+      }
+
+      .DWES {
+        background-color: gray;
+      }
+
+      .DAW {
+        background-color: darkorange;
+      }
+
+      .DIW {
+        background-color: khaki;
+      }
+    </style>
+    <table id="taula" cellspacing="0">
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="5">Horari</th>
+        </tr>
+        <tr>
+          <th>Dilluns</th>
+          <th>Dimarts</th>
+          <th>Dimecres</th>
+          <th>Dijous</th>
+          <th>Divendres</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15:00</td>
+          <td class="EIE">EIE</td>
+          <td rowspan="2" class="EIE">EIE</td>
+          <td class="DAW"> Desplagament d'aplicacions web</td>
+          <td rowspan="2" class="DWES">DW en entorn servidor</td>
+          <td rowspan="3" class="DWES">DW en entorn servidor</td>
+        </tr>
+        <tr>
+          <td>15:55</td>
+          <td class="DWEC" rowspan="2">DW en entorn client</td>
+          <td class="DIW" rowspan="2"> Disseny d'ineterficies web</td>
+        </tr>
+        <tr>
+          <td>16:50</td>
+          <td class="DWEC"> DW en entorn client</td>
+          <td class="DAW"> Desenvolupament d'aplicacions web</td>
+        </tr>
+        <tr>
+          <td>17:45</td>
+          <td colspan="5" class="pati">Patí</td>
+        </tr>
+        <tr>
+          <td>18:15</td>
+          <td class="DWES">DW en entorn servidor</td>
+          <td class="DWEC">DW en entorn client</td>
+          <td rowspan="3" class="DWES">DW en entorn servidor</td>
+          <td class="DAW"> Desenvolupament d'aplicacions web</td>
+          <td class="DWES">DW en entorn servidor</td>
+        </tr>
+        <tr>
+          <td>19:10</td>
+          <td rowspan="2" class="DAW"> Desplagament d'aplicacions web</td>
+          <td class="DIW" rowspan="2"> Disseny d'ineterficies web</td>
+          <td class="DIW" rowspan="2"> Disseny d'ineterficies web</td>
+          <td class="DWEC" rowspan="2">DW en entorn client</td>
+        </tr>
+        <tr>
+          <td>20:05</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
